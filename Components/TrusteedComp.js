@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import google from '@/public/Images/companyLogos/google.png'
-import instagram from '@/public/Images/companyLogos/instagram.png'
+import instagram from '@/public/Images/companyLogos/Instagram.png'
 
 const clients = [
     { name: 'Google', src: google },
