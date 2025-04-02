@@ -64,7 +64,7 @@ const Page = () => {
                 With a team of skilled developers and a commitment to excellence, we deliver exceptional results that drive business growth and user satisfaction.
             </p>
             <p className="text-gray-600 ">
-                Join us on a journey of innovation and success in the world of web & mobile development. Let's bring your digital vision to life!
+                Join us on a journey of innovation and success in the world of web & mobile development. Let&apos;s bring your digital vision to life!
             </p>
 
             <p className="text-gray-600 text-4xl font-bold my-6">
@@ -134,7 +134,7 @@ const Page = () => {
                         </div>
                         <h3 className="mb-3 text-2xl font-bold text-white font-figtree" >Our Partners</h3>
                         <p className="font-normal text-white text-md" >
-                            Our vision is strengthened through our partnership with Persist Ventures, a recognized leader in startup resources and growth. Together, we're creating a broader network of opportunities, enabling companies to access not only top talent but also strategic support for a sustainable future.
+                            Our vision is strengthened through our partnership with Persist Ventures, a recognized leader in startup resources and growth. Together, we&apos;re creating a broader network of opportunities, enabling companies to access not only top talent but also strategic support for a sustainable future.
                             </p>
                     </div>
                 </div>
