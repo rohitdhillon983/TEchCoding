@@ -35,7 +35,6 @@ export const HowWeWork = () => {
           end: "bottom 0%",
           scrub: 2,
           pin: true,
-          // markers: true,
         },
       });
     }

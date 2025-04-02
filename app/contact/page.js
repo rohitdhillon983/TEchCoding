@@ -12,7 +12,7 @@ import { BiMessageRoundedDetail } from "react-icons/bi";
 import { FaFacebookF, FaLinkedinIn ,FaInstagram,FaTwitter ,FaAngleDoubleRight  } from 'react-icons/fa';
 
 
-const page = () => {
+const Page = () => {
     const [formData, setFormData] = useState({
             name: "",
             contact: "",
@@ -224,4 +224,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -10,7 +10,7 @@ import dotImg from '@/public/Images/about/dots.png'
 import { FaAngleDoubleRight } from "react-icons/fa";
 import MeetExperts from '@/Components/MeetExperts'
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <section className='relative min-h-[80vh] overflow-hidden border w-full flex justify-center bg-[#171616e3]'>
@@ -147,4 +147,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

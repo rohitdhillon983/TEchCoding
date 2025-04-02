@@ -10,7 +10,7 @@ import CreateBlog from "@/Components/CreateBlog";
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useParams, useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
       const { id } = useParams();
       const { data: session } = useSession()
       const router = useRouter()
@@ -118,4 +118,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
