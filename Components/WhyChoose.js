@@ -1,9 +1,9 @@
 'use client'
 import React from 'react';
-import symbol from "@/public/Images/whyChoose/Symbol.png";
-import symbol1 from "@/public/Images/whyChoose/Symbol-1.png";
-import symbol2 from "@/public/Images/whyChoose/Symbol-2.png";
-import symbol3 from "@/public/Images/whyChoose/Symbol-3.png";
+import symbol from "@/public/Images/whyChoose/Symbol-4.png";
+import symbol1 from "@/public/Images/whyChoose/Symbol-4.png";
+import symbol2 from "@/public/Images/whyChoose/Symbol-4.png";
+import symbol3 from "@/public/Images/whyChoose/Symbol-4.png";
 import symbol4 from "@/public/Images/whyChoose/Symbol-4.png";
 
 const WhyChoose = () => {
