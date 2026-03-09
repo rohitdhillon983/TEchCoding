@@ -35,7 +35,7 @@ const MeetExperts = () => {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 max-[426px]:px-4 overflow-x-scroll">
           {teamMembers.map((member, index) => (
-            <div key={index} className="relative p-6 max-[426px]:p-4 bg-gray-100 rounded-xl shadow-lg BeforeSec overflow-hidden min-w-60">
+            <div key={index} className="relative p-6 max-[426px]:p-4 bg-gray-100 rounded-xl shadow-lg BeforeSec overflow-hidden min-w-60 max-[426px]:min-w-40">
               <div className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md flex items-center justify-center gap-2 max-[426px]:flex-col">
                 <FaTwitter  className="text-red-700 cursor-pointer" />
                 <FaLinkedin className="text-red-700 cursor-pointer" />
@@ -43,7 +43,7 @@ const MeetExperts = () => {
                 <FaFacebook className="text-red-700 cursor-pointer" />
               </div>
               <div className="flex flex-col text-left">
-                <img src={member.image} alt={member.name} className="rounded-[0_0_140px_0] z-10" />
+                <img src={member.image} alt={member.name} className="rounded-[0_0_140px_0] max-[426px]:rounded-[0_0_0_0] z-10" />
                 <h3 className="mt-4 text-xl Rajdhani font-bold text-gray-900 max-[426px]:text-lg">{member.name}</h3>
                 <p className="text-[#b91202] text-lg max-[1025px]:text-sm uppercase max-[426px]:text-sm">{member.role}</p>
               </div>

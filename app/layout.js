@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "TEch Coding",
   description: "TechCoding provides world-class web development, mobile app solutions, and cloud hosting services. Trusted globally for secure, scalable, and innovative digital products.",
+  icons:{
+    icon: './favicon.png',
+  }
 };
 
 export default function RootLayout({ children }) {

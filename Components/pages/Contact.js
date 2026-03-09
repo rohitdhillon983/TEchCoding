@@ -9,7 +9,9 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { LuUserRound } from "react-icons/lu";
 import { BiMessageRoundedDetail } from "react-icons/bi";
-import { FaFacebookF, FaLinkedinIn ,FaInstagram,FaTwitter ,FaAngleDoubleRight  } from 'react-icons/fa';
+import { AiOutlineGlobal } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn ,FaInstagram,FaTwitter ,FaAngleDoubleRight,FaRegClock , } from 'react-icons/fa';
+import { FiMessageCircle } from "react-icons/fi";
 
 
 const Contact = () => {
@@ -58,7 +60,7 @@ const Contact = () => {
         <section className='relative min-h-[80vh] overflow-hidden border w-full flex justify-center bg-[#171616e3]'>
             <Image src={icon1} alt="Contact Us" className="absolute left-0 z-0" />
             <Image src={ContactImage} alt="Contact Us" className="w-full max-h-[100%] -z-10 scaleAnimate" />
-            <Image src={icon2} alt="Contact Us" className="absolute right-0 bottom-0 z-10" />
+            {/* <Image src={icon2} alt="Contact Us" className="absolute right-0 bottom-0 z-10" /> */}
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-center">
                 <h2 className="text-7xl font-bold border-b-4 border-[#b91202] w-fit mx-auto">Contact Us</h2>
@@ -87,7 +89,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center gap-4">
                                 <span className="text-4xl bg-white text-[#b91202] p-2 rounded-full"><MdOutlinePhoneInTalk /></span>
-                                <p className="text-xl font-medium">+91 7355841453</p>
+                                <p className="text-xl font-medium">+91 7678621443</p>
                             </div>
                             <div className="flex items-start gap-4">
                                 <span className="text-4xl bg-white text-[#b91202] p-2 rounded-full"><GrLocation /></span>
@@ -170,7 +172,7 @@ const Contact = () => {
                 
                 {/* Open Hours */}
                 <div className="flex flex-col hover:bg-[#b91202] group/time hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
-                    <span className="text-red-500  text-5xl">🕒</span>
+                    <span className=" text-5xl"><FaRegClock /></span>
                     <h3 className="text-lg font-bold mt-4">Open Hours</h3>
                     <p className="text-gray-600 group-hover/time:text-gray-400 mt-2">MON-FRI: 9 AM - 22 PM</p>
                     <p className="text-gray-600 group-hover/time:text-gray-400 mt-2">SATURDAY: 9 AM - 20 PM</p>
@@ -188,7 +190,7 @@ const Contact = () => {
 
                 {/* Get In Touch */}
                 <div className="flex flex-col hover:bg-[#b91202] group/contact hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
-                    <span className="text-red-500 text-5xl">💬</span>
+                    <span className=" text-5xl"><FiMessageCircle /></span>
                     <h3 className="text-lg font-bold mt-4 ">Get In Touch</h3>
                     <p className="text-gray-600 mt-2 group-hover/contact:text-gray-400">Telephone: +91 7355841453</p>
                     <p className="text-gray-600 group-hover/contact:text-gray-400">Email: rohitdhillon983@gmail.com</p>
@@ -197,7 +199,7 @@ const Contact = () => {
 
                 {/* New Section - Social Media Links */}
                 <div className="flex flex-col hover:bg-[#b91202] group/media hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
-                    <span className="text-red-500 text-5xl">🌍</span>
+                    <span className=" text-5xl"><AiOutlineGlobal /></span>
                     <h3 className="text-lg font-bold mt-4">Follow Us</h3>
                     <p className="text-gray-600 mt-2 group-hover/media:text-gray-400">Stay connected on social media</p>
                     <div className="flex gap-4 mt-4">

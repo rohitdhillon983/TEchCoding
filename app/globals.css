@@ -65,6 +65,18 @@ body {
   background-color: #b9110284;
 }
 
+@media screen and (max-width: 426px) {
+  .BeforeSec::before{
+    top: 10px;
+    left: -20px;
+    width:calc(100% + 30px);
+    height: 120px;
+    border-radius: 0 80px 80px 0;
+    transform: rotate(35deg);
+    background-color: #b9110284;
+  }
+}
+
 /* testimonial */
 .clipPath{
   position: relative;

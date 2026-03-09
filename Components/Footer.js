@@ -131,7 +131,7 @@ const Footer = () => {
                 <MdLocationOn className="text-[#b91202]" /> 1901 Thornridge Cir. Cyber City,Gurugram 81063
                 </li>
                 <li className="flex items-center gap-2">
-                <MdPhone className="text-[#b91202]" /> +91 7355841453
+                <MdPhone className="text-[#b91202]" /> +91 7678621443
                 </li>
             </ul>
             </div>
