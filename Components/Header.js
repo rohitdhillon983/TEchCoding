@@ -46,7 +46,8 @@ const Header = () => {
     >
       <div className="w-full mx-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-3xl font-bold relative left-4 max-[769px]:text-xl max-[769px]:text-[#b91202] ">TEchCoding</h1>
+          {/* <h1 className="text-3xl font-bold relative left-4 max-[769px]:text-xl max-[769px]:text-[#b91202] ">TEchCoding</h1> */}
+          <img src="/Images/logo.png" alt="Logo" className="w-50 relative left-10 max-[769px]:left-5 max-[769px]:w-30" />
         </Link>
         <div className="relative hidden md:flex gap-4 max-[769px]:gap-1 justify-center p-4 max-[769px]:p-1 items-center font-semibold">
           <Link
@@ -84,11 +85,11 @@ const Header = () => {
                   className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 `}>
                   Mobile App Development
                 </Link>
-                <Link 
+                {/* <Link 
                   href="/services/SEO"
                   className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 `}>
                   SEO
-                </Link>
+                </Link> */}
                 <Link 
                   href="/service/ui-ux"
                   className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 `}>
