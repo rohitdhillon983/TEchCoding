@@ -6,6 +6,11 @@ import { FaArrowLeft, FaArrowRight, FaStar, FaWhatsapp,FaQuoteRight  } from 'rea
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef } from 'react';
 // import { Controller } from 'swiper';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Swiper.use([Controller]);
 
@@ -52,10 +57,45 @@ const testimonials = [
 
 const Testimonial = () => {
   const swiperRef = useRef(null);
+
+  useGSAP(() => {
+      gsap.from('.testimonial-section', {
+        y: 80,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.testimonial-section',
+          start: 'top 80%',
+          scroller:"body",
+          // markers:true,
+              // start:"top 85%",
+          end:"top 70%",             
+          scrub:2,
+          // toggleActions: 'play none none none',
+        }
+      });
+
+      // gsap.from('.faq-item', {
+      //   y: 50,
+      //   opacity: 0,
+      //   duration: 0.6,
+      //   stagger: 0.2,
+      //   ease: 'power2.out',
+      //   scrollTrigger: {
+      //     trigger: '.faq-section',
+      //     start: 'top 75%',
+      //     end: 'top 40%',
+      //     scroller:"body",
+      //     scrub:2,
+      //   }
+      // });
+      
+    }, []);
     
   return (
     <div>
-      <section className="relative flex max-[426px]:flex-col justify-center items-center mx-8 py-12 gap-8"> 
+      <section className="relative flex max-[426px]:flex-col justify-center items-center mx-8 py-12 gap-8 testimonial-section"> 
         <div className='min-w-[35%] '>
           <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider">// testimonials</h5>
           <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani">What's our<br /><span className='text-[#b91202]'>client's</span> words</h2>

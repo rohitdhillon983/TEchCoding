@@ -40,7 +40,7 @@ const Header = () => {
     }, [lastScrollY]);
   return (
       <nav
-      className={`bg-[#0f0e0e]  text-white  flex justify-between  items-center fixed top-0 left-0 right-0 z-50 rounded-full mx-16 mt-3 transition-transform duration-300 ${
+      className={`bg-[#0f0e0e]  text-white  flex justify-between  items-center fixed top-0 left-0 right-0 z-50 rounded-full mx-16 mt-3 transition-transform duration-600 ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-[117%]"
       }`}
     >

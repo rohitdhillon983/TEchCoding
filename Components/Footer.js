@@ -50,20 +50,22 @@ const Footer = () => {
     <div className=" relative pt-20 overflow-hidden">
       <div className="relative">
         <div className="overflow-hidden w-full z-20 bg-[#b91202] py-5 rotate-3 absolute -top-9 -left-2 min-w-[calc(100%+20px)]">
-            <div className="whitespace-nowrap animate-scroll flex gap-10">
-                <span className=" font-bold text-6xl text-white"><HiCode /></span>
-                <span className=" font-bold text-6xl textStyle">TEchCoding</span>
-                <span className=" font-bold text-6xl text-white"><HiCode /></span>
-                <span className=" font-bold text-6xl textStyle">TEchCoding</span>
-                <span className=" font-bold text-6xl text-white"><HiCode /></span>
-                <span className=" font-bold text-6xl textStyle">TEchCoding</span>
-                <span className=" font-bold text-6xl text-white"><HiCode /></span>
-                <span className=" font-bold text-6xl textStyle">TEchCoding</span>
-                <span className=" font-bold text-6xl text-white"><HiCode /></span>
-                <span className=" font-bold text-6xl textStyle">TEchCoding</span>
-                <span className=" font-bold text-6xl text-white"><HiCode /></span>
-                <span className=" font-bold text-6xl textStyle">TEchCoding</span>             
-            </div>    
+            <div className="whitespace-nowrap flex animate-marquee">
+  <div className="flex gap-10">
+    <span className="text-6xl text-white"><HiCode /></span>
+    <span className="text-6xl textStyle">TechCoding</span>
+    <span className="text-6xl text-white"><HiCode /></span>
+    <span className="text-6xl textStyle">TechCoding</span>
+  </div>
+
+  {/* Duplicate for infinite loop */}
+  <div className="flex gap-10 ml-10">
+    <span className="text-6xl text-white"><HiCode /></span>
+    <span className="text-6xl textStyle">TechCoding</span>
+    <span className="text-6xl text-white"><HiCode /></span>
+    <span className="text-6xl textStyle">TechCoding</span>
+  </div>
+</div>
         </div>
       </div>
       <footer className={`bg-[#0f0e0e] pt-30 text-white py-10 px-5 md:px-20`}>
@@ -125,13 +127,13 @@ const Footer = () => {
             <h3 className="text-xl font-semibold border-b border-gray-600 pb-2 mb-4">Contact</h3>
             <ul className="text-gray-400 text-sm space-y-3">
                 <li className="flex items-center gap-2">
-                <MdOutlineMail className="text-[#b91202]" /> rohitdhillon983@gmail.com
+                <MdOutlineMail className="text-[#b91202]" /> info.techcoding.in@gmail.com, rohitdhillon983@gmail.com
                 </li>
                 <li className="flex items-center gap-2">
                 <MdLocationOn className="text-[#b91202]" /> 1901 Thornridge Cir. Cyber City,Gurugram 81063
                 </li>
                 <li className="flex items-center gap-2">
-                <MdPhone className="text-[#b91202]" /> +91 7678621443
+                <MdPhone className="text-[#b91202]" /> +91 7678621443, +91 7206641903
                 </li>
             </ul>
             </div>
@@ -165,9 +167,9 @@ const Footer = () => {
         {/* Scroll to Top Button */}
         {showButton && (
             <button 
-            onClick={scrollToTop} 
-            className="absolute bottom-10 right-[50%] bg-[#b91202] text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all">
-            <FaArrowUp className="text-xl" />
+                onClick={scrollToTop} 
+                className="absolute cursor-pointer  bottom-10 right-[50%] bg-[#b91202] text-white p-3 rounded-full shadow-lg hover:scale-110 transition-all">
+                <FaArrowUp className="text-xl" />
             </button>
         )}
         {/* Footer Links */}

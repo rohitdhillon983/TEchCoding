@@ -113,13 +113,27 @@ body {
   white-space: nowrap;
   animation: scroll 120s linear infinite;
 }
-@keyframes scroll {
+/* @keyframes scroll {
   from {
     transform: translateX(-100%);
   }
   to {
     transform: translateX(100%);  
   }
+} */
+ @keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 10s linear infinite;
 }
 .textStyle{
   font-family: var(--font-geist-mono);
