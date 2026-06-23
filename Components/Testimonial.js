@@ -70,7 +70,7 @@ const Testimonial = () => {
           scroller:"body",
           // markers:true,
               // start:"top 85%",
-          end:"top 70%",             
+          end:"top 60%",             
           scrub:2,
           // toggleActions: 'play none none none',
         }

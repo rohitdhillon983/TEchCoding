@@ -40,19 +40,22 @@ const Header = () => {
     }, [lastScrollY]);
   return (
       <nav
-      className={`bg-[#0f0e0e]  text-white  flex justify-between  items-center fixed top-0 left-0 right-0 z-50 rounded-full mx-16 mt-3 transition-transform duration-600 ${
+      className={`bg-white/90
+backdrop-blur-xl
+border border-white/20
+shadow-lg shadow-black/5 text-black flex justify-between items-center fixed top-0 left-0 right-0 z-50 rounded-full mx-16 mt-3 transition-transform duration-600 ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-[117%]"
       }`}
     >
       <div className="w-full mx-auto flex justify-between items-center">
         <Link href="/">
           {/* <h1 className="text-3xl font-bold relative left-4 max-[769px]:text-xl max-[769px]:text-[#b91202] ">TEchCoding</h1> */}
-          <img src="/Images/logo.png" alt="Logo" className="w-50 relative left-10 max-[769px]:left-5 max-[769px]:w-30" />
+          <img src="/Images/logoBlack.png" alt="Logo" className="w-40 relative left-10 max-[769px]:left-5 max-[769px]:w-30" />
         </Link>
-        <div className="relative hidden md:flex gap-4 max-[769px]:gap-1 justify-center p-4 max-[769px]:p-1 items-center font-semibold">
+        <div className="relative hidden md:flex gap-4 max-[769px]:gap-1 justify-center p-0 max-[769px]:p-1 items-center font-semibold">
           <Link
             href="/"
-            className={` font-bold borderflex justify-center items-center gap-1 p-2 px-3 max-[769px]:px-1 transition-all duration-500 border-b border-transparent hover:border-[#b91202] ${
+            className={` font-bold borderflex justify-center items-center gap-1 p-0 px-3 max-[769px]:px-1 transition-all duration-500 border-b border-transparent hover:border-[#b91202] ${
               isActive("/") ? "text-[#b91202]" : ""
             }`}
           >
@@ -61,7 +64,7 @@ const Header = () => {
 
           <Link
             href="/about"
-            className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+            className={` font-bold flex justify-center items-center gap-1 p-0 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
               isActive("/about") ? "text-[#b91202]" : ""
             }`}
           >
@@ -69,11 +72,11 @@ const Header = () => {
           </Link>
 
           <div
-            className={` font-bold flex group/services justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1`}
+            className={` font-bold flex group/services justify-center items-center gap-1 p-0 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1`}
             >
             Services
             <FaAngleDown className="group-hover/services:rotate-180 transition-all duration-500" />
-             <div className="group/services:flex group-hover/services:h-[250px] transition-all h-0 overflow-hidden duration-500 z-50 absolute top-15 left-35 flex-col bg-[#0f0e0e] text-white opacity-0 group-hover/services:opacity-100">
+             <div className="group/services:flex group-hover/services:h-[250px] transition-all h-0 overflow-hidden duration-500 z-50 absolute top-10 left-35 flex-col bg-[#ffffff] text-black opacity-0 group-hover/services:opacity-100">
                 <Link
                   href="/service/web-development"
                   className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 `}
@@ -111,7 +114,7 @@ const Header = () => {
 
           <Link
                 href="/blog"
-                className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                className={` font-bold flex justify-center items-center gap-1 p-0 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
                   isActive("/blog") ? "text-[#b91202]" : ""
                 }`}
               >
@@ -119,7 +122,7 @@ const Header = () => {
           </Link>
           <Link
                 href="/contact"
-                className={` font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                className={` font-bold flex justify-center items-center gap-1 p-0 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
                   isActive("/contact") ? "text-[#b91202]" : ""
                 }`}
               >
@@ -130,7 +133,7 @@ const Header = () => {
         <div>
             <Link
                 href="/"
-                    className={`font-bold flex justify-center items-center relative min-h-[72px] max-[769px]:min-h-[50px] rounded-[0_100px_100px_0] text-5xl max-[769px]:text-3xl w-20 bg-gradient-to-r from-[#b9110200] to-[#b91202] text-white`}>
+                    className={`font-bold flex justify-center items-center relative min-h-[62px] max-[769px]:min-h-[50px] rounded-[0_100px_100px_0] text-5xl max-[769px]:text-3xl w-20 bg-gradient-to-r from-[#b9110200] to-[#b91202] text-white`}>
                     <CgMenuRight />
             </Link>
         </div>

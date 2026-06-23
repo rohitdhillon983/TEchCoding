@@ -16,11 +16,11 @@ import { useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-    { id: 1, value: '10+', label: 'Clients Review', icon: <FaStar className="text-red-600 text-3xl" /> },
-    { id: 2, value: '10+', label: 'Team Member', icon: <FaUsers className="text-red-600 text-3xl" /> },
-    { id: 3, value: '20+', label: 'Winning Award', icon: <FaTrophy className="text-red-600 text-3xl" /> },
-    { id: 4, value: '10+', label: 'Projects Done', icon: <FaTasks className="text-red-600 text-3xl" /> }
-  ];
+  { id: 1, value: 10, label: 'Clients Review', icon: <FaStar className="text-red-600 text-3xl" /> },
+  { id: 2, value: 10, label: 'Team Member', icon: <FaUsers className="text-red-600 text-3xl" /> },
+  { id: 3, value: 20, label: 'Winning Award', icon: <FaTrophy className="text-red-600 text-3xl" /> },
+  { id: 4, value: 10, label: 'Projects Done', icon: <FaTasks className="text-red-600 text-3xl" /> }
+];
   
 const MessageAndSomeNumbers = () => {
     const [formData, setFormData] = useState({
@@ -78,6 +78,39 @@ const MessageAndSomeNumbers = () => {
         //   markers: true
         },
       });
+    //   gsap.from(".MessageGsaP", {
+    //     x: -600,
+    //     opacity: 0,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //     trigger: ".MessageGsaP",
+    //     start: "top 70%",
+    //     },
+    // })
+    const counters = document.querySelectorAll(".counter");
+
+  counters.forEach((counter) => {
+    const target = Number(counter.getAttribute("data-target"));
+
+    gsap.fromTo(
+      counter,
+      { innerText: 0 },
+      {
+        innerText: target,
+        duration: 2,
+        ease: "power1.out",
+        snap: { innerText: 1 },
+        scrollTrigger: {
+          trigger: counter,
+          start: "top 85%",
+          once: true, // sirf ek baar chalega
+        },
+        onUpdate: function () {
+          counter.innerText = Math.ceil(this.targets()[0].innerText) + "+";
+        },
+      }
+    );
+  });
     })
   return (
     <div className='w-full overflow-hidden relative'>
@@ -95,7 +128,13 @@ const MessageAndSomeNumbers = () => {
                             {stat.icon}
                         </div>
                         <div className='mx-5 max-[769px]:mx-2 max-[769px]:max-w-[40%]'>
-                            <h2 className="text-white text-5xl font-bold Rajdhani max-[1025px]:text-4xl max-[769px]:text-3xl max-[426px]:text-2xl">{stat.value}</h2>
+                            {/* <h2 className="text-white text-5xl font-bold Rajdhani max-[1025px]:text-4xl max-[769px]:text-3xl max-[426px]:text-2xl">{stat.value}</h2> */}
+                            <h2
+  className="counter text-white text-5xl font-bold Rajdhani"
+  data-target={stat.value}
+>
+  0+
+</h2>
                             <p className="text-white text-lg Rajdhani mt-1 max-[1025px]:text-[16px] max-[769px]:text-sm max-[769px]:mt-0 max-[426px]:text-xs">{stat.label}</p>
                         </div>
                     </div>
