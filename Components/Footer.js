@@ -94,9 +94,10 @@ const Footer = () => {
         <div className="max-w-7xl mt-7 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 z-50">
             {/* Company Info */}
             <div>
-            <h2 className="text-2xl font-bold flex items-center gap-2 text-[#b91202] ">
-            TechCoding
-            </h2>
+            <Link href="/">
+          {/* <h1 className="text-3xl font-bold relative left-4 max-[769px]:text-xl max-[769px]:text-[#b91202] ">TEchCoding</h1> */}
+          <img src="/Images/logo.png" alt="Logo" className="w-40 relative  max-[769px]:w-30" />
+        </Link>
             <p className="mt-4 text-gray-400 text-sm">
                 We denounce with righteous indignation and dislike men who are so beguiled demoralized by the charms.
             </p>
@@ -162,7 +163,7 @@ const Footer = () => {
       
       {/* Newsletter */}
       <div className="max-w-7xl mx-auto mt-10 pt-5 flex flex-col md:flex-row justify-between items-center z-10">
-        <p className="text-gray-400 text-sm mt-4 md:mt-0">Copyright © TEchCoding.in 2025. All Rights Reserved.</p>
+        <p className="text-gray-400 text-sm mt-4 md:mt-0">Copyright © TechCoding.in 2025. All Rights Reserved.</p>
         
         {/* Scroll to Top Button */}
         {showButton && (
