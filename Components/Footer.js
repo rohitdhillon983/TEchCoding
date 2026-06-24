@@ -95,7 +95,7 @@ const Footer = () => {
             {/* Company Info */}
             <div>
             <h2 className="text-2xl font-bold flex items-center gap-2 text-[#b91202] ">
-            TEchCoding
+            TechCoding
             </h2>
             <p className="mt-4 text-gray-400 text-sm">
                 We denounce with righteous indignation and dislike men who are so beguiled demoralized by the charms.
@@ -127,10 +127,10 @@ const Footer = () => {
             <h3 className="text-xl font-semibold border-b border-gray-600 pb-2 mb-4">Contact</h3>
             <ul className="text-gray-400 text-sm space-y-3">
                 <li className="flex items-center gap-2">
-                <MdOutlineMail className="text-[#b91202]" /> info.techcoding.in@gmail.com, rohitdhillon983@gmail.com
+                <MdOutlineMail className="text-[#b91202]" /> contact@techcoding.in
                 </li>
                 <li className="flex items-center gap-2">
-                <MdLocationOn className="text-[#b91202]" /> 1901 Thornridge Cir. Cyber City,Gurugram 81063
+                <MdLocationOn className="text-[#b91202]" /> 1901 Thornridge Cir. Cyber City,Gurugram 122005
                 </li>
                 <li className="flex items-center gap-2">
                 <MdPhone className="text-[#b91202]" /> +91 7678621443, +91 7206641903

@@ -85,7 +85,7 @@ const Contact = () => {
                         <div className="mt-6 space-y-6">
                             <div className="flex items-center gap-4">
                                 <span className="text-4xl bg-white text-[#b91202] p-2 rounded-full"><HiOutlineMail /></span>
-                                <p className="text-xl font-medium">rohitdhillon983@email.com</p>
+                                <p className="text-xl font-medium">contact@techcoding.in</p>
                             </div>
                             <div className="flex items-center gap-4">
                                 <span className="text-4xl bg-white text-[#b91202] p-2 rounded-full"><MdOutlinePhoneInTalk /></span>
@@ -171,7 +171,7 @@ const Contact = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
                 
                 {/* Open Hours */}
-                <div className="flex flex-col hover:bg-[#b91202] group/time hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
+                <div className="flex flex-col p-8 rounded-2xl border border-gray-300 bg-gray-100 items-left text-left transition-all duration-700">
                     <span className=" text-5xl"><FaRegClock /></span>
                     <h3 className="text-lg font-bold mt-4">Open Hours</h3>
                     <p className="text-gray-600 group-hover/time:text-gray-400 mt-2">MON-FRI: 9 AM - 22 PM</p>
@@ -180,25 +180,25 @@ const Contact = () => {
                 </div>
 
                 {/* Address */}
-                <div className="hover:bg-[#b91202] group/address hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
+                <div className="p-8 rounded-2xl border border-gray-300 bg-gray-100 items-left text-left transition-all duration-700">
                     <span className="text-5xl"><GrLocation /></span>
                     <h3 className="text-lg font-bold mt-4">Address</h3>
                     <p className="mt-2 text-gray-600 group-hover/address:text-gray-400">Germany – 785 15h Street, Office 478</p>
-                    <p className=" text-gray-600 group-hover/address:text-gray-400">Gurugram, In 81566</p>
+                    <p className=" text-gray-600 group-hover/address:text-gray-400">Gurugram, In 122005</p>
                     <a href="#" className="mt-4 inline-block underline">Check Location →</a>
                 </div>
 
                 {/* Get In Touch */}
-                <div className="flex flex-col hover:bg-[#b91202] group/contact hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
+                <div className="flex flex-col p-8 rounded-2xl border border-gray-300 bg-gray-100 items-left text-left transition-all duration-700">
                     <span className=" text-5xl"><FiMessageCircle /></span>
                     <h3 className="text-lg font-bold mt-4 ">Get In Touch</h3>
                     <p className="text-gray-600 mt-2 group-hover/contact:text-gray-400">Telephone: +91 7355841453</p>
-                    <p className="text-gray-600 group-hover/contact:text-gray-400">Email: rohitdhillon983@gmail.com</p>
+                    <p className="text-gray-600 group-hover/contact:text-gray-400">Email: contact@techcoding.in</p>
                     <a href="#" className="mt-4 inline-block underline">Contact form →</a>
                 </div>
 
                 {/* New Section - Social Media Links */}
-                <div className="flex flex-col hover:bg-[#b91202] group/media hover:text-white p-8 rounded-2xl items-left text-left transition-all duration-700">
+                <div className="flex flex-col p-8 rounded-2xl border border-gray-300 bg-gray-100 items-left text-left transition-all duration-700">
                     <span className=" text-5xl"><AiOutlineGlobal /></span>
                     <h3 className="text-lg font-bold mt-4">Follow Us</h3>
                     <p className="text-gray-600 mt-2 group-hover/media:text-gray-400">Stay connected on social media</p>
