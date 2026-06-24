@@ -112,7 +112,7 @@ export default function Service() {
     <div className="">
         <section className='relative min-h-[80vh] overflow-hidden border w-full flex justify-center bg-[#17161678]'>
                 {/* <Image src={icon1} alt="Contact Us" className="absolute left-0 z-0" /> */}
-            <Image src='/images/contact.png' width={1920} height={1080} alt="Service" className="w-full max-h-[100%] -z-10" />
+            <Image src={ContactImage} width={1920} height={1080} alt="Service" className="w-full max-h-[100%] -z-10" />
                 {/* <Image src={icon2} alt="Contact Us" className="absolute right-0 bottom-0 z-10" /> */}
               
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-center">
