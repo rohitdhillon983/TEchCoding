@@ -95,7 +95,7 @@ const Testimonial = () => {
     
   return (
     <div>
-      <section className="relative flex max-[426px]:flex-col justify-center items-center mx-8 py-12 gap-8 testimonial-section"> 
+      <section className="relative max-w-7xl mx-auto flex max-[426px]:flex-col justify-center items-center mx-8 py-12 gap-8 testimonial-section"> 
         <div className='min-w-[35%] '>
           <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider">// testimonials</h5>
           <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani">What's our<br /><span className='text-[#b91202]'>client's</span> words</h2>
@@ -115,13 +115,13 @@ const Testimonial = () => {
                ref={swiperRef}
                breakpoints={{
                 769: {
-                  slidesPerView: 1,                
+                  slidesPerView: 2,                
                 },
                 426: {
                   slidesPerView: 1,
                 },
                 1024: {
-                  slidesPerView: 1.2,
+                  slidesPerView: 2,
                 },
                 1440: {
                   slidesPerView: 2,

@@ -84,7 +84,7 @@ const faqs = [
 
 const page = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <HeroPage></HeroPage>
       <About></About>  
       <Services></Services>

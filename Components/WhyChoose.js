@@ -9,10 +9,10 @@ import symbol4 from "@/public/Images/whyChoose/Symbol-4.png";
 const WhyChoose = () => {
  
   return (
-    <div className="bg-white py-1 px-6 md:px-12 my-15">
+    <div className="bg-white py-1 px-6 md:px-12 my-15 max-w-7xl mx-auto">
       <div className="mx-auto text-center">       
         {/* Features Section */}
-        <div className="flex flex-wrap gap-6 justify-end pr-10">
+        <div className="flex flex-wrap gap-6 justify-end ">
           <div className="w-[558px] text-left flex flex-col justify-center">
             <p className="text-[#b91202] text-lg Rajdhani font-bold tracking-wider max-[769px]:text-sm max-[426px]:text-xs">
               // Why TEchCoding

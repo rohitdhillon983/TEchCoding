@@ -15,6 +15,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroPage = () => {
   return (
@@ -113,13 +114,13 @@ const HeroPage = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="rounded-xl flex justify-center items-center gap-2 bg-[#b91202] px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105">
+              <Link href="/service" className="rounded-xl flex justify-center items-center gap-2 bg-[#b91202] px-8 py-4 font-semibold text-white shadow-lg transition">
                 Explore Services <FaArrowRightLong className="text-lg" />
-              </button>
+              </Link>
 
-              <button className="rounded-xl flex justify-center items-center gap-2 border border-purple-300 bg-white px-8 py-4 font-semibold text-purple-600 transition hover:bg-purple-50">
-               <IoCallOutline className="text-xl" /> Contact Us
-              </button>
+              <Link href="/contact" className="rounded-xl flex justify-center items-center gap-2 border border-purple-300 bg-white px-8 py-4 font-semibold text-purple-600 transition hover:bg-purple-50">
+                <IoCallOutline className="text-xl" /> Contact Us
+              </Link>
             </div>
 
             {/* Stats */}
@@ -163,7 +164,7 @@ const HeroPage = () => {
         </div>
 
         {/* Brands */}
-        <div className="mt-20 border-t border-gray-300 pt-10">
+        {/* <div className="mt-20 border-t border-gray-300 pt-10">
           <p className="mb-8 text-center text-lg font-semibold text-gray-500">
             Trusted By Forward-Thinking Brands
           </p>
@@ -176,7 +177,7 @@ const HeroPage = () => {
             <span className="text-3xl font-bold">AWS</span>
             <span className="text-3xl font-bold">Adobe</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -38,8 +38,8 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-        <div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_0%_0px,#f7aca5_1px,transparent)]"></div>
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_0%_0px,#f7aca5_1px,transparent)]"></div>
       </div>
       <div className="flex justify-center items-center gap-2 w-[80%] mt-10 max-[426px]:mt-20 max-[769px]:mt-24 mb-2">
         {/* left section */}
@@ -55,11 +55,11 @@ export default function RegisterPage() {
         {/* right section */}
         <div className='w-1/2 flex flex-col justify-center items-center'>
           <h2 className="text-4xl font-bold Rubik mb-4">Register</h2>
-          <form onSubmit={handleRegister} className="w-96 p-6 border rounded-3xl shadow-md bg-white pt-9">
+          <form onSubmit={handleRegister} className="w-96 p-6 border border-gray-300 rounded-3xl shadow-md bg-white pt-9">
             {message && <p className="text-red-500">{message}</p>}
-            <input className="w-full mb-3 p-2 pl-4 border rounded-3xl" type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-            <input className="w-full mb-3 p-2 pl-4 border rounded-3xl" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-            <input className="w-full mb-3 p-2 pl-4 border rounded-3xl" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input className="w-full mb-3 p-2 pl-4 border border-[#b91202] rounded-3xl" type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+            <input className="w-full mb-3 p-2 pl-4 border border-[#b91202] rounded-3xl" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className="w-full mb-3 p-2 pl-4 border border-[#b91202] rounded-3xl" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button type="submit" className="w-full p-2 bg-[#b91202] Rajdhani font-bold text-white rounded-3xl">{loading ? <span class="loader"></span> : "Register"}</button>
             <p className="mt-2 text-center">Already have an account? <Link href="/login" className="text-[#b91202]">Login</Link></p>
           </form>

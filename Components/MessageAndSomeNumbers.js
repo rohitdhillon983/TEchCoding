@@ -116,10 +116,10 @@ const MessageAndSomeNumbers = () => {
     <div className='w-full overflow-hidden relative'>
       <div className='absolute flex w-full max-h-[120vh] border bg-[#0f0e0e] overflow-hidden'>
         <Image src={leftSideImage} alt='' className='relative -top-4'></Image>
-        <Image src={rightSideImage} alt='' className='relative -top-4 -right-15'></Image>
+        <Image src={rightSideImage} alt='' className='relative -top-4 -right-30'></Image>
       </div>
 
-      <div className='relative flex flex-col items-center justify-center max-w-10/12 mx-auto '>
+      <div className='relative flex flex-col items-center justify-center max-w-7xl mx-auto '>
             <section className=" my-24 max-[769px]:my-10 max-[426px]:flex-wrap relative w-full flex justify-center items-center">
                 <div className="relative flex justify-between w-full max-[769px]:justify-center max-[426px]:flex-wrap gap-4">
                     {stats.map((stat) => (

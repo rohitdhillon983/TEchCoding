@@ -51,7 +51,7 @@ const FAQs = ({ title, faqsData }) => {
       
     }, []);
   return (
-    <section className='py-16 px-6 bg-white faq-section'>
+    <section className='py-16 px-6 bg-white faq-section max-w-7xl mx-auto'>
       <div className='max-w-4xl mx-auto text-center'>
         <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider max-[426px]:text-sm">// FAQ </h5>
         <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani max-[426px]:text-3xl max-[426px]:mt-0">What would you like to know about<br /><span className='text-[#b91202]'>{title}</span></h2>

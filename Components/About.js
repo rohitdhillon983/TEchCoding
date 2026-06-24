@@ -6,7 +6,7 @@ import AboutImage from '@/public/Images/img-about.png'
 const About = () => {
   return (
     <div>
-       <section className="flex min-h-screen flex-col lg:flex-row items-center justify-between px-10 py-16 bg-white relative">
+       <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-10 py-16 bg-white relative">
 
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <Image src={AboutImage} alt="About Us" className="w-[90%] object-cover" />
@@ -14,7 +14,7 @@ const About = () => {
 
         <div className="w-full lg:w-1/2 text-left lg:pl-12">
           <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider max-[769px]:text-sm max-[426px]:text-xs">// About Us</h5>
-          <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani max-[426px]:text-3xl max-[769px]:text-5xl">Crafting Success Stories<br />One Client at a Time</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani max-[426px]:text-3xl max-[769px]:text-5xl">Crafting Success <br />Stories One Client at a Time</h2>
           <p className="text-gray-600 my-6">
             At TechCoding.in, we transform ideas into reality with cutting-edge web & mobile development solutions. From startups to enterprises, we craft scalable, secure, and high-performance digital experiences.
             </p>

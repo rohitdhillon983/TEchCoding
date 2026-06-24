@@ -41,9 +41,9 @@ const Header = () => {
   return (
       <nav
       className={`bg-white/90
-backdrop-blur-xl
-border border-white/20
-shadow-lg shadow-black/5 text-black flex justify-between items-center fixed top-0 left-0 right-0 z-50 rounded-full mx-16 mt-3 transition-transform duration-600 ${
+        backdrop-blur-xl
+        border border-white/20
+        shadow-lg shadow-black/5 text-black flex justify-between items-center py-2 max-md:p-0 fixed top-0 left-0 right-0 z-50 rounded-full mx-16 mt-3 transition-transform duration-600 ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-[117%]"
       }`}
     >
@@ -52,7 +52,7 @@ shadow-lg shadow-black/5 text-black flex justify-between items-center fixed top-
           {/* <h1 className="text-3xl font-bold relative left-4 max-[769px]:text-xl max-[769px]:text-[#b91202] ">TEchCoding</h1> */}
           <img src="/Images/logoBlack.png" alt="Logo" className="w-40 relative left-10 max-[769px]:left-5 max-[769px]:w-30" />
         </Link>
-        <div className="relative hidden md:flex gap-4 max-[769px]:gap-1 justify-center p-0 max-[769px]:p-1 items-center font-semibold">
+        <div className="relative hidden md:flex gap-4 max-[769px]:gap-1 justify-center pr-10  max-[769px]:p-1 items-center font-semibold">
           <Link
             href="/"
             className={` font-bold borderflex justify-center items-center gap-1 p-0 px-3 max-[769px]:px-1 transition-all duration-500 border-b border-transparent hover:border-[#b91202] ${
@@ -130,16 +130,87 @@ shadow-lg shadow-black/5 text-black flex justify-between items-center fixed top-
           </Link>            
         </div>
 
-        <div>
+        {/* <div>
             <Link
                 href="/"
                     className={`font-bold flex justify-center items-center relative min-h-[62px] max-[769px]:min-h-[50px] rounded-[0_100px_100px_0] text-5xl max-[769px]:text-3xl w-20 bg-gradient-to-r from-[#b9110200] to-[#b91202] text-white`}>
                     <CgMenuRight />
             </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Menu */}
+      <div className="md:hidden flex items-center relative">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`font-bold flex justify-center items-center relative min-h-[62px] max-[769px]:min-h-[50px] rounded-[0_100px_100px_0] text-5xl max-[769px]:text-3xl w-20 bg-gradient-to-r from-[#b9110200] to-[#b91202] text-white`}
+        >
+          <CgMenuRight />
+        </button>
+      </div>
+      {isOpen && (
+        // <div className="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black/50 z-40" onClick={() => setIsOpen(false)}>
+          <div className="md:hidden absolute top-16 right-0 w-full bg-white shadow-lg z-50">
+            <ul className="flex flex-col items-center justify-center gap-4 py-4">
+              <li>
+                <Link
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                  className={`font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                    isActive("/") ? "text-[#b91202]" : ""
+                  }`}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  onClick={() => setIsOpen(false)}
+                  className={`font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                    isActive("/about") ? "text-[#b91202]" : ""
+                  }`}
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  onClick={() => setIsOpen(false)}
+                  className={`font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                    isActive("/services") ? "text-[#b91202]" : ""
+                  }`}
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  onClick={() => setIsOpen(false)}
+                  className={`font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                    isActive("/blog") ? "text-[#b91202]" : ""
+                  }`}
+                >
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className={`font-bold flex justify-center items-center gap-1 p-2 transition-all duration-500 border-transparent hover:border-[#b91202] border-b px-3 max-[769px]:px-1 ${
+                    isActive("/contact") ? "text-[#b91202]" : ""
+                  }`}
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+        // </div>
+      )}
     </nav>
   )
 }

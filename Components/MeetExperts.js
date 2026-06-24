@@ -5,17 +5,17 @@ import { FaShareAlt ,FaLinkedin,FaInstagram ,FaTwitter,FaFacebook   } from 'reac
 const teamMembers = [
   {
     name: 'Rohit Dhillon',
-    role: 'CO-FOUNDER',
-    image: 'https://vatech-html-demo.vercel.app/assets/imgs/pages/home11/expert2.png',
+    role: 'Founder',
+    image: '/images/rohit1.png',
   },
   {
     name: 'Amandeep Dhillon',
     role: 'Chief executive officer',
-    image: 'https://vatech-html-demo.vercel.app/assets/imgs/pages/home11/expert2.png',
+    image: '/images/amandeep.png',
   },
   {
-    name: 'Ronald Richards',
-    role: 'Finance Advisor',
+    name: 'Kapil Yadav',
+    role: 'Technical Lead',
     image: 'https://vatech-html-demo.vercel.app/assets/imgs/pages/home11/expert2.png',
   },
   {
@@ -26,7 +26,7 @@ const teamMembers = [
 ];
 const MeetExperts = () => {
   return (
-    <section className="py-16 max-[426px]:py-8 bg-white">
+    <section className="py-16 max-w-7xl mx-auto max-[426px]:py-8 bg-white">
       <div className="max-w-10/12 mx-auto text-center max-[426px]:max-w-full">
       <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider max-[769px]:text-sm max-[426px]:text-xs">// meet our experts</h5>
       <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani max-[426px]:text-3xl max-[769px]:text-5xl">Empowering Connections <br /> Empowering <span className='text-[#b91202]'>Growth</span></h2>
@@ -36,12 +36,12 @@ const MeetExperts = () => {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 max-[426px]:px-4 overflow-x-scroll">
           {teamMembers.map((member, index) => (
             <div key={index} className="relative p-6 max-[426px]:p-4 bg-gray-100 rounded-xl shadow-lg BeforeSec overflow-hidden min-w-60 max-[426px]:min-w-40">
-              <div className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md flex items-center justify-center gap-2 max-[426px]:flex-col">
+              {/* <div className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md flex items-center justify-center gap-2 max-[426px]:flex-col">
                 <FaTwitter  className="text-red-700 cursor-pointer" />
                 <FaLinkedin className="text-red-700 cursor-pointer" />
                 <FaInstagram className="text-red-700 cursor-pointer" />
                 <FaFacebook className="text-red-700 cursor-pointer" />
-              </div>
+              </div> */}
               <div className="flex flex-col text-left">
                 <img src={member.image} alt={member.name} className="rounded-[0_0_140px_0] max-[426px]:rounded-[0_0_0_0] z-10" />
                 <h3 className="mt-4 text-xl Rajdhani font-bold text-gray-900 max-[426px]:text-lg">{member.name}</h3>

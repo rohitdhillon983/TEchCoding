@@ -17,13 +17,13 @@ const services = [
 
 const Services = () => {
   return (
-    <div className='mx-auto max-w-11/12 text-center mb-10 bg-[#f8cfcf2f] p-10 rounded-4xl'>
+    <div className='mx-auto max-w-7xl text-center mb-10 bg-[#f8cfcf2f] p-10 rounded-4xl'>
       <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider max-[769px]:text-sm max-[426px]:text-xs">// Our Services </h5>
       <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani max-[426px]:text-3xl max-[769px]:text-5xl">Inspiring Confidence corporate<br /><span className='text-[#b91202]'>Delivering</span> Solutions</h2>
         
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-10'>
             {services.map((service) => (
-                <Link href={service.url} key={service.id} className="shadow-lg rounded-[40px] cursor-pointer group/item bg-white">
+                <Link href={service.url} key={service.id} className="shadow-lg rounded-[40px] p-4 cursor-pointer group/item bg-white">
                     <div className='flex flex-col gap-2 px-6 py-2 text-left'>
                         {/* <div className='w-20 h-20 bg-[#b91202] rounded-full flex items-center justify-center'>
                             <Image src={service.Image} alt={service.name} className='group-hover/item:scale-90 transition'/>
