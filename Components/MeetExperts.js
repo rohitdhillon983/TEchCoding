@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import { FaShareAlt ,FaLinkedin,FaInstagram ,FaTwitter,FaFacebook   } from 'react-icons/fa';
 
 const teamMembers = [
@@ -14,12 +15,12 @@ const teamMembers = [
     image: '/images/amandeep.png',
   },
   {
-    name: 'Kapil Yadav',
+    name: 'Gopal Sharma',
     role: 'Technical Lead',
-    image: 'https://vatech-html-demo.vercel.app/assets/imgs/pages/home11/expert2.png',
+    image: '/images/gopal.png',
   },
   {
-    name: 'Marnin Mckinney',
+    name: 'Ashish Saggu',
     role: 'Finance Advisor',
     image: 'https://vatech-html-demo.vercel.app/assets/imgs/pages/home11/expert2.png',
   },
@@ -43,7 +44,7 @@ const MeetExperts = () => {
                 <FaFacebook className="text-red-700 cursor-pointer" />
               </div> */}
               <div className="flex flex-col text-left">
-                <img src={member.image} alt={member.name} className="rounded-[0_0_140px_0] max-[426px]:rounded-[0_0_0_0] z-10" />
+                <Image src={member.image} alt={member.name} width={300} height={300} className="rounded-[0_0_100px_0] max-h-58 max-[426px]:rounded-[0_0_0_0] z-10" />
                 <h3 className="mt-4 text-xl Rajdhani font-bold text-gray-900 max-[426px]:text-lg">{member.name}</h3>
                 <p className="text-[#b91202] text-lg max-[1025px]:text-sm uppercase max-[426px]:text-sm">{member.role}</p>
               </div>
