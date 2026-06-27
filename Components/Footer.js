@@ -103,10 +103,10 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 mt-4">
                 <Link className='cursor-pointer' href={'https://www.facebook.com'}><FaFacebookF className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
-                <Link className='cursor-pointer' href={'https://github.com/rohitdhillon983'}><FaGithub className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
-                <Link className='cursor-pointer' href={'https://www.linkedin.com/in/rohit-dhillon-a86008243'}><FaLinkedinIn className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
+                {/* <Link className='cursor-pointer' href={'https://github.com/rohitdhillon983'}><FaGithub className="cursor-pointer text-xl hover:text-[#b91202]" /></Link> */}
+                <Link className='cursor-pointer' href={'https://www.linkedin.com/company/techcoding-in/'}><FaLinkedinIn className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
                 <Link className='cursor-pointer' href={'https://x.com/_rohit_dhillon_'}><FaTwitter className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
-                <Link className='cursor-pointer' href={'https://www.instagram.com/rohit__dhillon__001/'}><FaInstagram  className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
+                <Link className='cursor-pointer' href={'https://www.instagram.com/techcoding.in/'}><FaInstagram  className="cursor-pointer text-xl hover:text-[#b91202]" /></Link>
             </div>
             </div>
             
@@ -114,11 +114,11 @@ const Footer = () => {
             <div>
             <h3 className="text-xl font-semibold border-b border-gray-600 pb-2 mb-4">Services</h3>
             <ul className="text-gray-400 text-sm space-y-2">
-                <li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> UI/UX Design</li>
-                <li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> Web Development</li>
-                <li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> Mobile App Development</li>
+                <Link href={'/service/ui-ux'}><li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> UI/UX Design</li></Link>
+                <Link href={'/service/web-development'}><li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> Web Development</li></Link>
+                <Link href={'/service/mobile-app-development'}><li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> Mobile App Development</li></Link>
                 {/* <li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span>IOS App Development</li> */}
-                <li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> SEO</li>
+                <Link href={'/service/seo'}><li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> SEO</li></Link>
                 {/* <li className="hover:text-[#b91202] cursor-pointer flex items-center gap-1"><span><FaChevronRight className="text-[#b91202]" /></span> Cyber Security</li> */}
             </ul>
             </div>
@@ -163,7 +163,7 @@ const Footer = () => {
       
       {/* Newsletter */}
       <div className="max-w-7xl mx-auto mt-10 pt-5 flex flex-col md:flex-row justify-between items-center z-10">
-        <p className="text-gray-400 text-sm mt-4 md:mt-0">Copyright © TechCoding.in 2025. All Rights Reserved.</p>
+        <p className="text-gray-400 text-sm mt-4 md:mt-0">Copyright © techCoding.in 2025. All Rights Reserved.</p>
         
         {/* Scroll to Top Button */}
         {showButton && (
@@ -177,7 +177,7 @@ const Footer = () => {
         <div className="flex text-center text-gray-400 text-sm">
             <a href="#" className="hover:text-[#b91202] mx-2">Terms & Conditions</a>
             <a href="#" className="hover:text-[#b91202] mx-2">Privacy Policy</a>
-            <a href="#" className="hover:text-[#b91202] mx-2">Contact Us</a>
+            <Link href="/contact" className="hover:text-[#b91202] mx-2">Contact Us</Link>
         </div>
       </div>   
     </footer>

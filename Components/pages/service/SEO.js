@@ -22,10 +22,10 @@ import FAQs from '@/Components/FAQs'
 
 
 const faqs = [
-  { question: 'How much does a typical website cost?', answer: 'The cost varies widely based on complexity and features. We offer custom quotes after discussing your project.' },
-  { question: 'How long will it take to build my website?', answer: 'Simple websites can take a few weeks, while complex web applications might take several months.' },
-  { question: 'Do you offer website maintenance?', answer: 'Yes, we provide ongoing maintenance to keep your website secure and updated.' },
-  { question: 'Will my website be mobile-friendly?', answer: 'Absolutely. Every site is built with a mobile-first approach.' },
+  { question: 'How much does SEO development cost?', answer: 'The cost varies widely based on complexity and features. We offer custom quotes after discussing your project.' },
+  { question: 'How long will it take to see results from my SEO efforts?', answer: 'SEO is a long-term strategy, and results typically become visible within 3-6 months of consistent implementation.' },
+  { question: 'Do you offer ongoing SEO maintenance?', answer: 'Yes, we provide continuous SEO support to ensure your rankings improve and are maintained over time.' },
+  { question: 'Will my website be optimized for search engines?', answer: 'Absolutely. Our team implements comprehensive SEO strategies to enhance your site\'s visibility and performance in search results.' },
 ];
 
 const serviceFeatures = [
@@ -124,7 +124,7 @@ const SEO = () => {
         </div>
       </section>
 
-      <FAQs title="Web Development" faqsData={faqs}></FAQs>
+      <FAQs title="SEO" faqsData={faqs}></FAQs>
 
       {/* <MeetExperts></MeetExperts> */}
     </div>

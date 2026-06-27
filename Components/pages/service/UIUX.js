@@ -22,10 +22,13 @@ import FAQs from '@/Components/FAQs'
 
 
 const faqs = [
-  { question: 'How much does a typical website cost?', answer: 'The cost varies widely based on complexity and features. We offer custom quotes after discussing your project.' },
-  { question: 'How long will it take to build my website?', answer: 'Simple websites can take a few weeks, while complex web applications might take several months.' },
-  { question: 'Do you offer website maintenance?', answer: 'Yes, we provide ongoing maintenance to keep your website secure and updated.' },
-  { question: 'Will my website be mobile-friendly?', answer: 'Absolutely. Every site is built with a mobile-first approach.' },
+  { question: 'How much does UI/UX design cost?', answer: 'The cost varies widely based on complexity and features. We offer custom quotes after discussing your project.' },
+  { question: 'How long will it take to design my UI/UX?', answer: 'Design timelines vary based on project scope, but we typically deliver within 2-4 weeks for standard projects.' },
+  { question: 'Do you offer UI/UX design maintenance?', answer: 'Yes, we provide ongoing support to ensure your designs remain effective and up-to-date.' },
+  { question: 'Will my UI/UX be user-friendly?', answer: 'Absolutely. Our designs are centered around creating intuitive and engaging user experiences.' },
+  { question: 'Can you redesign my existing UI/UX?', answer: 'Yes, we can revamp your current designs to improve usability and aesthetics.' },
+  { question: 'Do you provide wireframes and prototypes?', answer: 'Yes, we create detailed wireframes and interactive prototypes to visualize the user journey before development.' },
+  
 ];
 
 const serviceFeatures = [
@@ -46,8 +49,8 @@ const UIUX = () => {
         {/* <Image src={icon2} alt="Contact Us" className="absolute right-0 bottom-0 z-10" /> */}
       
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-center">
-            <h2 className="text-7xl font-bold border-b-4 border-[#b91202] w-fit mx-auto">Web Development</h2>
-            <p className="text-2xl mt-2 flex items-center gap-2">Service <FaAngleDoubleRight className='text-[#b91202]'/> Web Development</p>
+            <h2 className="text-7xl font-bold border-b-4 border-[#b91202] w-fit mx-auto">UI/UX Design</h2>
+            <p className="text-2xl mt-2 flex items-center gap-2">Service <FaAngleDoubleRight className='text-[#b91202]'/> UI/UX Design</p>
         </div>
       </section>
 
@@ -80,8 +83,8 @@ const UIUX = () => {
         </div>
 
         <div className="w-full md:w-1/2 mt-10 md:mt-0">
-        <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider">// web development</h5>
-        <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani">Build your website With the Latest Technology </h2>
+        <h5 className="text-[#b91202] text-lg Rajdhani font-bold uppercase tracking-wider">// ui/ux design</h5>
+        <h2 className="text-5xl font-bold text-gray-900 mt-2 Rajdhani">Create Stunning User Experiences </h2>
             <p className="text-gray-600 my-6">
                 At TechCoding, we specialize in crafting cutting-edge web and mobile applications that empower businesses to thrive in the digital age. Our expertise spans across custom software development, cloud hosting, and AI-driven solutions, all designed to meet the unique needs of our clients.
             </p>
@@ -124,7 +127,7 @@ const UIUX = () => {
         </div>
       </section>
 
-      <FAQs title="Web Development" faqsData={faqs}></FAQs>
+      <FAQs title="UI/UX Design" faqsData={faqs}></FAQs>
 
       {/* <MeetExperts></MeetExperts> */}
     </div>
