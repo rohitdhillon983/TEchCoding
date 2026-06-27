@@ -175,8 +175,8 @@ const Footer = () => {
         )}
         {/* Footer Links */}
         <div className="flex text-center text-gray-400 text-sm">
-            <a href="#" className="hover:text-[#b91202] mx-2">Terms & Conditions</a>
-            <a href="#" className="hover:text-[#b91202] mx-2">Privacy Policy</a>
+            <Link href="/terms-and-conditions" className="hover:text-[#b91202] mx-2">Terms & Conditions</Link>
+            <Link href="/privacy-policy" className="hover:text-[#b91202] mx-2">Privacy Policy</Link>
             <Link href="/contact" className="hover:text-[#b91202] mx-2">Contact Us</Link>
         </div>
       </div>   

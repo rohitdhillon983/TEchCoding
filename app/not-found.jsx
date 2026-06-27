@@ -7,6 +7,7 @@ import {
   Phone,
   ArrowRight,
 } from "lucide-react";
+const image404 = "@/public/Images/404.png";
 
 export default function NotFound() {
   const cards = [
@@ -43,7 +44,7 @@ export default function NotFound() {
         {/* 404 Image */}
         <div className="flex justify-center">
           <img
-            src="/images/404.png"
+            src={image404}
             alt="404"
             className="w-full max-w-3xl"
           />

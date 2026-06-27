@@ -2,22 +2,25 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaShareAlt ,FaLinkedin,FaInstagram ,FaTwitter,FaFacebook   } from 'react-icons/fa';
+const aman = '@/public/Images/amandeep.png';
+const rohit = '@/public/Images/rohit1.png';
+const gopal = '@/public/Images/gopal.png';
 
 const teamMembers = [
   {
     name: 'Rohit Dhillon',
     role: 'Founder',
-    image: '/images/rohit1.png',
+    image: rohit,
   },
   {
     name: 'Amandeep Dhillon',
     role: 'Chief executive officer',
-    image: '/images/amandeep.png',
+    image: aman,
   },
   {
     name: 'Gopal Sharma',
     role: 'Technical Lead',
-    image: '/images/gopal.png',
+    image: gopal,
   },
   {
     name: 'Ashish Saggu',
